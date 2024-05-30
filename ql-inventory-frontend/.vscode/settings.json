@@ -1,0 +1,13 @@
+{
+	"prettier.jsxSingleQuote": true,
+	"prettier.useTabs": true,
+	"prettier.bracketSameLine": true,
+	"prettier.singleAttributePerLine": true,
+	"prettier.singleQuote": true,
+	"prettier.eslintIntegration": true,
+	"prettier.parser": "babel",
+	"prettier.stylelintIntegration": true,
+	"editor.formatOnSave": true,
+	"editor.tabSize": 2,
+	"files.autoSave": "onFocusChange"
+}
