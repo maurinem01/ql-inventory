@@ -6,7 +6,8 @@ import TextField from '@mui/material/TextField';
 import { Button } from '@mui/material';
 
 function SaveSchedule({ startDate, endDate, item }) {
-	const BASE_URL = 'http://localhost:8080/api/schedules';
+	const BASE_URL =
+		'https://ql-inventory-backend-16f686f03873.herokuapp.com/api/schedules';
 	const [destination, setDestination] = useState('');
 
 	const textStyle = { width: 350 };

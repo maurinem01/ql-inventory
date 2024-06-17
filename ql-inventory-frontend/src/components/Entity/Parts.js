@@ -30,7 +30,8 @@ function Parts() {
 		p: 4,
 	};
 
-	const BASE_URL = 'http://localhost:8080/api';
+	const BASE_URL =
+		'https://ql-inventory-backend-16f686f03873.herokuapp.com/api';
 
 	const [isLoading, setIsLoading] = useState(false);
 	const [error, setError] = useState();

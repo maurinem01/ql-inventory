@@ -14,7 +14,8 @@ function Schedules() {
 		margin: '20px auto',
 	};
 
-	const BASE_URL = 'http://localhost:8080/api';
+	const BASE_URL =
+		'https://ql-inventory-backend-16f686f03873.herokuapp.com/api';
 
 	const [isLoading, setIsLoading] = useState(false);
 	const [error, setError] = useState();
@@ -72,7 +73,7 @@ function Schedules() {
 				style={paperStyle}>
 				<h2 align='center'>Vehicle Schedule</h2>
 				{items?.map((item) => {
-					if (item.part.id === 3) {
+					if (item.part.identifier === 'VEHICLE') {
 						var unavailableDays = [];
 
 						// item.schedules?.map((schedule) => {
@@ -158,43 +159,9 @@ function Schedules() {
 													item={item}
 													unavailableDays={unavailableDays}
 												/>
-												{/* <br />
-												<BasicModal
-													buttonVariant='contained'
-													buttonSize='large'
-													buttonStartIcon={<AddOutlinedIcon />}
-													buttonText={'NEW SCHEDULE'}
-													content={<SaveSchedule item={item} />}
-												/> */}
 											</>
 										</>
 									}
-									// actions={
-									// 	<>
-									// 		<BasicModal
-									// 			buttonVariant='outlined'
-									// 			buttonSize='small'
-									// 			buttonStartIcon={<CreateOutlinedIcon />}
-									// 			buttonText='Edit'
-									// 			// content={<SaveSchedule />}
-									// 		/>
-									// 		&nbsp;
-									// 		<Button
-									// 			size='small'
-									// 			variant='outlined'
-									// 			startIcon={<DeleteOutlineOutlinedIcon />}
-									// 			// onClick={(e) => {
-									// 			// 	e.preventDefault();
-									// 			// 	fetch(`${BASE_URL}/items/${item.id}`, {
-									// 			// 		method: 'DELETE',
-									// 			// 		headers: { 'Content-Type': 'application/json' },
-									// 			// 	});
-									// 			// }}
-									// 		>
-									// 			Delete
-									// 		</Button>
-									// 	</>
-									// }
 								/>
 							</>
 						);

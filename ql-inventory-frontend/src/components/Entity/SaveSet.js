@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 
 function SaveSet({ set }) {
 	const URL =
-		'http://localhost:8080/api/sets' +
+		'https://ql-inventory-backend-16f686f03873.herokuapp.com/api/sets' +
 		(set != null ? '/' + set.id.toString() : '');
 	const textStyle = { width: 350 };
 

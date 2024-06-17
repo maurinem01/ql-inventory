@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 
 function SaveItem(props) {
 	const URL =
-		'http://localhost:8080/api/items' +
+		'https://ql-inventory-backend-16f686f03873.herokuapp.com/api/items' +
 		(props.id > 0 ? '/' + props.id.toString() : '');
 	const textStyle = { width: 350 };
 
