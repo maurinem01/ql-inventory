@@ -1,3 +1,3 @@
 # ql-inventory
 
-readme
+A demonstration of this project can be found at https://ql-inventory-backend-16f686f03873.herokuapp.com/
