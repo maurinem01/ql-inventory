@@ -30,7 +30,7 @@ function SaveSet({ set }) {
 			.then(setIdentifier(''))
 			.then(() => setLoading(false))
 			.catch(setError);
-	}, [set.identifier, URL]);
+	}, [set, URL]);
 
 	if (loading) return <h3 align='center'>Loading...</h3>;
 	if (error) return <h3 align='center'>Error!</h3>;
